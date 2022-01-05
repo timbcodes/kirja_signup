@@ -1,11 +1,66 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kirja Signup Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,400;0,800;1,200&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../public/css/normalize.css" />
+    <link rel="stylesheet" href="../public/css/style.css" />
+</head>
+
+<body>
+    <header class="main_header">
+        <div class="logo_container">
+            <h1 class="main_logo">Kirja</h1>
+        </div>
+        <div class="menu_container">
+            <ul class="main_menu">
+                <a href="#" class="menu_link">
+                    <li class="menu_item">Investors</li>
+                </a>
+            </ul>
+        </div>
+    </header>
+    <main class="main_body">
+        <div class="call_container">
+            <div class="main_img">
+                <img src="../public/assets/undraw_reminders_re_gtyb.svg" alt="Main page image for Kirja signup" class="call_img" id="call_img" />
+            </div>
+            <div class="signup_container">
+                <div class="signup_text_container">
+                    <h1 class="call_to_action">Coming Soon!</h1>
+                    <p class="call_to_action_para">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quae suscipit dolor consectetur sapiente, laboriosam officia, explicabo quas molestias odit rerum ullam perferendis expedita et nulla. Ratione veniam reprehenderit quo? Lorem ipsum dolor sit
+                        amet, consectetur adipisicing elit. Rem at optio similique, nobis laboriosam nihil possimus ipsam fuga sunt quidem, magni est porro ullam. Magni, ut quas. Incidunt, quam dolor?
+                    </p>
+                </div>
+                <div class="signup_form">
+                    <div class="form_field">
+                        <input type="text" class="email_input" id="email_input" name="email_input" placeholder="Enter Your Email" />
+                    </div>
+                    <div class="submit_btn_container">
+                        <button class="submit_btn" id="submit_btn">Submit</button>
+                    </div>
+                </div>
+                <div class="honest_container">
+                    <p class="honest_text">
+                        (We pinky promise to never sell your email address, and we won't ever spam you. The only peep you'll get out of us is when Kirja is up and running and ready for you to use!)
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bottom_footer">
+        <div class="linkout_container">
+            <p class="copy_text">&copy;2022</p>
+            <a href="http://timb.codes" target="_blank" class="linkout">{timb.<span>codes</span>}</a
+        >
+      </div>
+    </footer>
   </body>
 </html>
