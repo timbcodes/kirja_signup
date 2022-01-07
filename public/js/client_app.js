@@ -5,6 +5,25 @@ const emailInput = document.getElementById("email_input");
 // Add an event listener
 submitBtn.addEventListener("click", () => {
     const emailAddy = emailInput.value;
-    fetch(`/email_add/?email=${emailAddy}`);
-    console.log(emailAddy);
+    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(emailInput.value)) {
+        fetch(`/email_add/?email=${emailAddy}`);
+    } else {
+        alert("You have entered an invalid email address!");
+        return false;
+    }
+});
+
+emailInput.addEventListener("keypress", (e) => {
+    if (e.key === "Enter") {
+        const emailAddy = emailInput.value;
+        if (
+            /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(emailInput.value)
+        ) {
+            fetch(`/email_add/?email=${emailAddy}`);
+            console.log(emailAddy);
+        } else {
+            alert("You have entered an invalid email address!");
+            return false;
+        }
+    }
 });
