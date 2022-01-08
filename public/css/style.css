@@ -204,7 +204,7 @@ input:focus {
     float: right;
 }
 
-@media (-height: 700px) {
+@media (max-height: 700px) {
     footer {
         display: none;
     }
@@ -254,6 +254,8 @@ input:focus {
     body {
         overflow-x: hidden;
         padding: env(safe-area-inset);
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
     }
     .call_container {
         flex-wrap: wrap;
