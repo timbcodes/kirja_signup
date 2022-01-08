@@ -65,6 +65,7 @@ button {
     -webkit-box-shadow: 3px 6px 5px -2px rgba(19, 17, 18, 0.46);
     box-shadow: 3px 6px 5px -2px rgba(19, 17, 18, 0.46);
     cursor: pointer;
+    margin-left: 5px;
 }
 
 li {
@@ -201,4 +202,85 @@ input:focus {
 #submit {
     margin-top: 1em;
     float: right;
+}
+
+@media (max-width: 1180px) {
+    .call_img {
+        max-height: 275px;
+    }
+    .signup_container {
+        min-width: 50%;
+        margin-left: 10em;
+    }
+}
+
+@media (max-width: 1180px) and (min-width: 820px) {
+    .call_container {
+        flex-wrap: wrap;
+    }
+    .signup_container {
+        min-width: 80%;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    .call_img {
+        max-height: 250px;
+        margin-top: 3em;
+    }
+    .linkout_container {
+        display: none;
+    }
+    #submit {
+        margin-bottom: 3em;
+    }
+}
+
+@media (max-width: 768px) {
+    html,
+    body {
+        overflow-x: hidden;
+        padding: env(safe-area-inset);
+    }
+    .call_container {
+        flex-wrap: wrap;
+    }
+    .signup_container {
+        min-width: 90%;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        margin-top: 6em;
+    }
+    .call_img {
+        max-height: 250px;
+        margin-top: 3em;
+    }
+    .linkout_container {
+        display: none;
+    }
+    #submit {
+        margin-bottom: 3em;
+    }
+    input {
+        text-align: center;
+    }
+    span {
+        display: none;
+    }
+    .shrink {
+        padding: 6px 0;
+    }
+    .main_menu {
+        margin-right: 1em;
+    }
+    .main_logo {
+        letter-spacing: 1.5px;
+        margin-left: 1em;
+    }
+    .success_cont {
+        margin: 0;
+        padding: 0;
+        margin-top: -8em;
+    }
 }
