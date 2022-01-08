@@ -7,6 +7,7 @@ submitBtn.addEventListener("click", () => {
     const emailAddy = emailInput.value;
     if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(emailInput.value)) {
         fetch(`/email_add/?email=${emailAddy}`);
+        window.location.href = "/success";
     } else {
         alert("You have entered an invalid email address!");
         return false;
@@ -20,7 +21,7 @@ emailInput.addEventListener("keypress", (e) => {
             /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(emailInput.value)
         ) {
             fetch(`/email_add/?email=${emailAddy}`);
-            console.log(emailAddy);
+            window.location.href = "/success";
         } else {
             alert("You have entered an invalid email address!");
             return false;

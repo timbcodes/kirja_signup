@@ -175,3 +175,30 @@ img {
 span {
     color: #b232ce;
 }
+
+.form_container {
+    margin-top: 2em;
+}
+
+.side_by_side {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input {
+    border-radius: 25px;
+    border: 1px solid #131112;
+    padding: 6px 10px;
+    margin: 0.35em;
+}
+
+input:focus {
+    border: 1px solid #b232ce;
+}
+
+#submit {
+    margin-top: 1em;
+    float: right;
+}
