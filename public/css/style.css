@@ -204,13 +204,26 @@ input:focus {
     float: right;
 }
 
-@media (max-width: 1180px) {
+@media (-height: 700px) {
+    footer {
+        display: none;
+    }
+}
+
+@media (max-width: 1800px) {
+    .signup_container {
+        min-width: 50%;
+        margin-left: 12em;
+    }
+}
+
+@media (max-width: 1800px) and (min-width: 1180px) {
     .call_img {
         max-height: 275px;
     }
     .signup_container {
         min-width: 50%;
-        margin-left: 10em;
+        margin-left: 8em;
     }
 }
 
